@@ -28,7 +28,7 @@ const PokemonCards = (props) => {
   };
 
   return (
-    <div onClick={flipHanlder}>
+    <div>
       <Tilt className={classes.frontCards} options={options}>
         <img src={props.src} className={classes.img} />
         <p>{props.name}</p>

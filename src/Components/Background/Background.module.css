@@ -55,8 +55,8 @@ h1 {
   background-color: rgb(143, 143, 143);
 }
 
-/* @media (max-width: 700px) {
-  video {
+@media (max-width: 700px) {
+  .img {
     object-fit: cover;
   }
-} */
+}

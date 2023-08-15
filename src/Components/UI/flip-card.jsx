@@ -13,6 +13,7 @@ class FlipCard extends React.Component {
   }
 
   handleClick(e) {
+    e.preventDefault();
     this.props.flipCard();
     this.props.selectedPokemon({
       id: this.props.id,
@@ -34,11 +35,12 @@ class FlipCard extends React.Component {
     return (
       <ReactCardFlip isFlipped={this.props.flip} flipDirection="horizontal">
         {!this.props.flip && (
-          <PokemonCards
-            src={this.props.src}
-            name={this.props.name}
-            onClick={this.handleClick}
-          ></PokemonCards>
+          <div role="button" onClick={this.handleClick}>
+            <PokemonCards
+              src={this.props.src}
+              name={this.props.name}
+            ></PokemonCards>
+          </div>
         )}
         <BackCard></BackCard>
       </ReactCardFlip>
