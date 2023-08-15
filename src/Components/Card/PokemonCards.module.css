@@ -1,0 +1,41 @@
+.frontCards {
+  width: 230px;
+  height: 250px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Adjust the background color and transparency */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.img {
+  width: 80%;
+  border: solid rgba(233, 233, 233, 0.171); /* Remove the solid border */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Adjust the background color and transparency */
+  border-radius: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .frontCards {
+    width: 150px;
+    height: 180px;
+  }
+}

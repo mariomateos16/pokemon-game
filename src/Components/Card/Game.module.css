@@ -1,0 +1,57 @@
+.score {
+  position: absolute;
+  top: 2rem;
+  border-radius: 5px;
+  padding: 0 1.5rem 1rem 1.5rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    25deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 0.6) 100%
+  );
+  border: 5px double black;
+}
+
+.game-board {
+  padding: 1rem 1rem 0 1rem;
+
+  position: absolute;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  overflow: scroll;
+  max-height: 500px;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  gap: 5px;
+  scrollbar-width: none;
+}
+
+.pokeball {
+  position: absolute;
+  width: 30%;
+  top: 30%;
+}
+
+.game-board::-webkit-scrollbar {
+  width: 0.5rem;
+  background: transparent;
+}
+
+.game-board::-webkit-scrollbar-thumb {
+  background: #ffffff94;
+  border-radius: 0.25rem;
+}
+
+.game-board:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff94 transparent;
+}
+@media (max-width: 500px) {
+  .game-board {
+    max-height: 80%;
+  }
+}

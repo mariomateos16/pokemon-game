@@ -1,0 +1,70 @@
+.card {
+  width: 70%;
+  height: 300px;
+  background-color: rgb(252, 252, 252);
+  border: double black 10px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  font-weight: 800;
+  list-style-type: none;
+}
+.select {
+  list-style-type: none;
+  position: relative;
+}
+
+.select::before {
+  content: "\25B6";
+  left: -20px;
+  animation: blinker 1.5s linear infinite;
+}
+
+a {
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.list:hover,
+h4:hover,
+a:hover {
+  cursor: pointer;
+}
+h4,
+a {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+h4:active,
+.list:active,
+a:active {
+  color: rgb(184, 184, 184);
+}
+
+.list-container {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  margin-right: 2rem;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    width: 40%;
+    height: 320px;
+  }
+}
