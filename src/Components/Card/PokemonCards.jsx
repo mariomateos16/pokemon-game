@@ -17,20 +17,6 @@ function Tilt(props) {
 
 ///////////////////////////////////////////////////
 const PokemonCards = (props) => {
-  const flip = useSelector((state) => state.flip);
-
-  const viewFront = flip
-    ? setTimeout(() => {
-        `${classes.frontCards} ${classes.hide}`;
-      }, 200)
-    : `${classes.frontCards}`;
-
-  const viewContainer = flip
-    ? setTimeout(() => {
-        `${classes.hide}`;
-      }, 200)
-    : "";
-
   const options = {
     scale: 1.1,
     speed: 1100,
@@ -42,8 +28,8 @@ const PokemonCards = (props) => {
   };
 
   return (
-    <div onClick={flipHanlder} className={viewContainer}>
-      <Tilt className={viewFront} options={options}>
+    <div onClick={flipHanlder}>
+      <Tilt className={classes.frontCards} options={options}>
         <img src={props.src} className={classes.img} />
         <p>{props.name}</p>
       </Tilt>

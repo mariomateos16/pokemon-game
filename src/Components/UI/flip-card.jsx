@@ -33,12 +33,13 @@ class FlipCard extends React.Component {
   render() {
     return (
       <ReactCardFlip isFlipped={this.props.flip} flipDirection="horizontal">
-        <PokemonCards
-          src={this.props.src}
-          name={this.props.name}
-          onClick={this.handleClick}
-        ></PokemonCards>
-
+        {!this.props.flip && (
+          <PokemonCards
+            src={this.props.src}
+            name={this.props.name}
+            onClick={this.handleClick}
+          ></PokemonCards>
+        )}
         <BackCard></BackCard>
       </ReactCardFlip>
     );
