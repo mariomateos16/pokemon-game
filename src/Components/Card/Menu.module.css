@@ -16,11 +16,13 @@
   list-style-type: none;
 }
 .select {
+  color: black;
   list-style-type: none;
   position: relative;
 }
 
 .select::before {
+  color: black;
   content: "\25B6";
   left: -20px;
   animation: blinker 1.5s linear infinite;
