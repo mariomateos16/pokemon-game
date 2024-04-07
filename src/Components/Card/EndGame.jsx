@@ -26,13 +26,13 @@ const EndGame = (props) => {
       <div className={classes.endGame}>
         <h3>{props.title}</h3>
         <img className={classes.gif} src={props.src} alt="sad pikachu" />
-        <h4 className={classes.score}>{`Your Final score is ${score}`}</h4>
+        <h4 className={classes.score}>{`Tu puntuación final es ${score}`}</h4>
         <ul className={`${classes.centeredList}`}>
           <li className={classes.options} onClick={playAgain}>
-            Play Again
+            Intentar de nuevo
           </li>
           <li className={classes.options} onClick={resetGame}>
-            Quit
+            Quitar
           </li>
         </ul>
       </div>

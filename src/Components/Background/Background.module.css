@@ -15,7 +15,8 @@ h1 {
   margin: 0;
   padding: 0.7rem;
   text-align: center;
-  background-color: yellow;
+  background: linear-gradient(to bottom, #368242, #84D63D);
+  color: rgb(32, 32, 32);
   position: fixed;
   width: 100%;
   top: 0; /* Add this line to fix the element at the top */

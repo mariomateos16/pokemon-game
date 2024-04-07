@@ -12,10 +12,10 @@ const Background = () => {
 
   return (
     <div className={classes.background}>
-      {!startGame && <h1>Pokemon</h1>}
+      {!startGame && <h1>¡HAZTE CON TODOS!</h1>}
       {startGame && (
         <h1 className={classes.score}>
-          <label htmlFor="score">{`Score:${score}`}</label>
+          <label htmlFor="score">{`Puntuación: ${score}`}</label>
           <label htmlFor="guess">{`${score}/${level}`}</label>
         </h1>
       )}

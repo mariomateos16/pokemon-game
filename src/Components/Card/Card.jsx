@@ -13,8 +13,8 @@ const Card = () => {
   return (
     <Modal>
       {!startGame && <Menu />}
-      {gameWon && <EndGame title={"You win!"} src={happyPikachu} />}
-      {!isAlive && !gameWon && <EndGame title={"game over"} src={sadPikachu} />}
+      {gameWon && <EndGame title={"Has Ganado!"} src={happyPikachu} />}
+      {!isAlive && !gameWon && <EndGame title={"Has Perdido..."} src={sadPikachu} />}
     </Modal>
   );
 };

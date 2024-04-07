@@ -50,17 +50,16 @@ const Menu = (props) => {
       <h3>Pokemon Memory Game</h3>
       <ul className={classes["list-container"]}>
         <li className={easyClass} onClick={easyHandler}>
-          Easy
+          Fácil
         </li>
         <li className={mediumClass} onClick={mediumHandler}>
-          Medium
+          Medio
         </li>
         <li className={hardClass} onClick={hardHandler}>
-          Hard
+          Difícil
         </li>
       </ul>
-      <h4 onClick={startGameHandler}>Start game!</h4>
-      <a href="https://github.com/ATT5/pokemon-memory-game">Github repo</a>
+      <h4 onClick={startGameHandler}>Empezar a Jugar!</h4>
       <audio ref={audioRef}>
         <source src={click} type="audio/mpeg" />
       </audio>
